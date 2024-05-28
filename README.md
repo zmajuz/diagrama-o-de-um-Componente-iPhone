@@ -1,2 +1,20 @@
-# diagrama-o-de-um-Componente-iPhone
-Repositório para colocar a Diagramação de um Componente iPhone
+classDiagram
+    Iphone --|> ReprodutorMusical
+    Iphone --|> AparelhoTelefonico
+    Iphone --|> NavegadorInternet
+
+    class ReprodutorMusical{
+      +tocar()
+      +pausar()
+      +selecionarMusica(String musica)
+    }
+    class AparelhoTelefonico{
+      +ligar(String numero)
+      +atender()
+      +iniciarCorreioVoz()
+    }
+    class NavegadorInternet{
+      +exibirPagina(String url)
+      +adicionarNovaAba()
+      +atualizarPagina()
+    }
